@@ -1,0 +1,23 @@
+{
+  "name": "aws-photo-bucket",
+  "version": "1.0.0",
+  "description": "[Advanced] AWS-sdk, s3, API Gateway, Lambda, Serverless, and ES6 Methods",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilverNeko21/aws-photo-bucket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilverNeko21/aws-photo-bucket/issues"
+  },
+  "homepage": "https://github.com/SilverNeko21/aws-photo-bucket#readme",
+  "dependencies": {
+    "aws-sdk": "^2.358.0"
+  }
+}
