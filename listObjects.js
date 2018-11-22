@@ -5,9 +5,10 @@ const s3 = new AWS.S3();
 
 module.exports.list = (event, context, callback) => {
   const params = {
-    Bucket: "treasure-chest-capstone"
+    Bucket: "treasure-chest-capstone",
+    MaxKeys: 4
   };
-  s3.listObjects(params, function(err, data) {
+  s3.listObjectsV2(params, function(err, data) {
     if (err) console.log(err, err.stack); 
     console.log('data', data);
    
@@ -18,7 +19,7 @@ module.exports.list = (event, context, callback) => {
       'Access-Control-Allow-Credentials': true
     },
     body: JSON.stringify({
-      message: data
+      message: data,
     })
   };
   callback(null, response)
